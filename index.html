@@ -9,8 +9,48 @@
     <a href="./about.html">About Me</a>
     <title>Frontend Portfolio Project</title>
   </head>
-  <body>
-    <h1>Currency converter using exchangeRate API</h1>
-    <h2>Shaik Kamil</h2>
+
+  <body id="page1">
+    <div id="page-wrapper">
+      <header>
+        <h1>Currency converter using exchangeRate API</h1>
+        <h2>Shaik Kamil</h2>
+      </header>
+      <main>
+        <div id="title">
+          <h3>Currency Xchanger</h3>
+        </div>
+        <form class="xchange">
+          <label for="from-this"
+            >Enter amount & currencies to get exchange rates</label
+          >
+          <br />
+          <p id="required">All fields are required!</p>
+          <div class="choose-amount">
+            <label for="amount" class="amount">Amount</label>
+            <br />
+            <input id="number-input" type="number" required />
+          </div>
+          <br />
+          <div id="from">
+            <label for="from-this"></label>
+            <select name="first-country" id="first-country" required>
+              <option id="from-country" value="currency">From: Country</option>
+            </select>
+          </div>
+
+          <br />
+          <div id="to">
+            <label for="to-this"></label>
+            <select name="second-country" id="second-country" required>
+              <option id="to-country" value="currency">To: Country</option>
+            </select>
+            <br />
+            <p id="result">1 USD = 79.680632 INR</p>
+            <input id="button" type="submit" value="Get Rates" />
+          </div>
+        </form>
+      </main>
+    </div>
   </body>
 </html>

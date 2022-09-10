@@ -4,3 +4,7 @@ fetch(url)
   .then((res) => res.json())
   .then((data) => console.log(data))
   .catch((error) => console.log(error));
+if (!amount || from || to) {
+  const required = document.querySelector('required');
+}
+required.style.display = visible;
