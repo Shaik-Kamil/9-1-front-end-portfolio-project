@@ -16,38 +16,153 @@
         <h2>Shaik Kamil</h2>
       </header>
       <main>
-        <div id="title">
-          <h3>Currency Xchanger</h3>
-        </div>
-        <form class="xchange">
-          <label for="from-this"
-            >Enter amount & currencies to get exchange rates</label
-          >
+        <form>
+          <div id="title">
+            <h3>Currency Xchanger</h3>
+          </div>
+          <p id="enter-amount">
+            Enter amount & currencies to get exchange rates
+          </p>
           <br />
           <p id="required">All fields are required!</p>
-          <div class="choose-amount">
-            <label for="amount" class="amount">Amount</label>
-            <br />
-            <input id="number-input" type="number" required />
-          </div>
           <br />
           <div id="from">
             <label for="from-this"></label>
             <select name="first-country" id="first-country" required>
               <option id="from-country" value="currency">From:</option>
-              <option value="usd">USD</option>
+              <option value="AED">AED</option>
+              <option value="ARS">ARS</option>
+              <option value="AUD">AUD</option>
+              <option value="BGN">BGN</option>
+              <option value="BRL">BRL</option>
+              <option value="BSD">BSD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CLP">CLP</option>
+              <option value="CNY">CNY</option>
+              <option value="COP">COP</option>
+              <option value="CZK">CZK</option>
+              <option value="DKK">DKK</option>
+              <option value="DOP">DOP</option>
+              <option value="EGP">EGP</option>
+              <option value="EUR">EUR</option>
+              <option value="FJD">FJD</option>
+              <option value="GBP">GBP</option>
+              <option value="GTQ">GTQ</option>
+              <option value="HKD">HKD</option>
+              <option value="HRK">HRK</option>
+              <option value="HUF">HUF</option>
+              <option value="IDR">IDR</option>
+              <option value="ILS">ILS</option>
+              <option value="INR">INR</option>
+              <option value="ISK">ISK</option>
+              <option value="JPY">JPY</option>
+              <option value="KRW">KRW</option>
+              <option value="KZT">KZT</option>
+              <option value="MXN">MXN</option>
+              <option value="MYR">MYR</option>
+              <option value="NOK">NOK</option>
+              <option value="NZD">NZD</option>
+              <option value="PAB">PAB</option>
+              <option value="PEN">PEN</option>
+              <option value="PHP">PHP</option>
+              <option value="PKR">PKR</option>
+              <option value="PLN">PLN</option>
+              <option value="PYG">PYG</option>
+              <option value="RON">RON</option>
+              <option value="RUB">RUB</option>
+              <option value="SAR">SAR</option>
+              <option value="SEK">SEK</option>
+              <option value="SGD">SGD</option>
+              <option value="THB">THB</option>
+              <option value="TRY">TRY</option>
+              <option value="TWD">TWD</option>
+              <option value="UAH">UAH</option>
+              <option value="USD" selected>USD</option>
+              <option value="UYU">UYU</option>
+              <option value="VND">VND</option>
+              <option value="ZAR">ZAR</option>
             </select>
+            <input
+              type="number"
+              id="first-amount"
+              placeholder="Enter amount here"
+              min="1"
+            />
           </div>
-
+          <br />
+          <br />
+          <div class="swapper">
+            <button class="button" id="swap">Swap</button>
+            <div class="exchange-rate" id="result"></div>
+          </div>
+          <br />
           <br />
           <div id="to">
             <label for="to-this"></label>
             <select name="second-country" id="second-country" required>
               <option id="to-country" value="currency">To:</option>
+              <option value="AED">AED</option>
+              <option value="ARS">ARS</option>
+              <option value="AUD">AUD</option>
+              <option value="BGN">BGN</option>
+              <option value="BRL">BRL</option>
+              <option value="BSD">BSD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CLP">CLP</option>
+              <option value="CNY">CNY</option>
+              <option value="COP">COP</option>
+              <option value="CZK">CZK</option>
+              <option value="DKK">DKK</option>
+              <option value="DOP">DOP</option>
+              <option value="EGP">EGP</option>
+              <option value="EUR">EUR</option>
+              <option value="FJD">FJD</option>
+              <option value="GBP">GBP</option>
+              <option value="GTQ">GTQ</option>
+              <option value="HKD">HKD</option>
+              <option value="HRK">HRK</option>
+              <option value="HUF">HUF</option>
+              <option value="IDR">IDR</option>
+              <option value="ILS">ILS</option>
+              <option value="INR" selected>INR</option>
+              <option value="ISK">ISK</option>
+              <option value="JPY">JPY</option>
+              <option value="KRW">KRW</option>
+              <option value="KZT">KZT</option>
+              <option value="MXN">MXN</option>
+              <option value="MYR">MYR</option>
+              <option value="NOK">NOK</option>
+              <option value="NZD">NZD</option>
+              <option value="PAB">PAB</option>
+              <option value="PEN">PEN</option>
+              <option value="PHP">PHP</option>
+              <option value="PKR">PKR</option>
+              <option value="PLN">PLN</option>
+              <option value="PYG">PYG</option>
+              <option value="RON">RON</option>
+              <option value="RUB">RUB</option>
+              <option value="SAR">SAR</option>
+              <option value="SEK">SEK</option>
+              <option value="SGD">SGD</option>
+              <option value="THB">THB</option>
+              <option value="TRY">TRY</option>
+              <option value="TWD">TWD</option>
+              <option value="UAH">UAH</option>
+              <option value="USD">USD</option>
+              <option value="UYU">UYU</option>
+              <option value="VND">VND</option>
+              <option value="ZAR">ZAR</option>
             </select>
+            <input
+              type="number"
+              id="second-amount"
+              placeholder="...."
+              min="0"
+            />
             <br />
-            <p id="result">1 USD = 79.680632 INR</p>
-            <input id="button" type="submit" value="Get Rates" />
+            <br />
           </div>
         </form>
       </main>
