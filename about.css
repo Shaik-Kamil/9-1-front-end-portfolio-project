@@ -58,3 +58,22 @@ a:hover {
 a:active {
   color: blueviolet;
 }
+
+.home {
+  text-align: left;
+}
+
+#home {
+  background-color: magenta;
+  color: black;
+}
+
+#home:hover {
+  color: chartreuse;
+  background-color: black;
+}
+
+#home:visited {
+  color: teal;
+  background-color: azure;
+}
