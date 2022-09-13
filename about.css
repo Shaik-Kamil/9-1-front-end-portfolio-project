@@ -17,7 +17,6 @@ header {
   border-radius: 10px;
 }
 .intro-top {
-  /* margin: 0; */
   display: grid;
   padding: 0.5em;
 }
@@ -34,9 +33,7 @@ img {
 #social {
   margin-top: 20px 20px;
   padding: 10px;
-  /* text-align: center; */
   font-weight: bold;
-  justify-content: center;
 }
 a {
   margin: 20px;
@@ -53,19 +50,14 @@ a:visited {
 }
 a:hover {
   color: red;
-  /* color: blue; */
 }
 a:active {
   color: blueviolet;
 }
 
-.home {
-  text-align: left;
-}
-
-#home {
-  background-color: magenta;
+#tag {
   color: black;
+  text-align: center;
 }
 
 #home:hover {
@@ -78,14 +70,34 @@ a:active {
   background-color: azure;
 }
 
-@media (max-width: 1000px) {
-  .home {
-    text-align: center;
-    display: grid;
-    padding: 10px;
-    border-radius: 5px;
-  }
+.contact-form {
+  color: red;
+  background-color: lavender;
+  border: 2px solid green;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 2px 5px 5px;
+  width: 400px;
+  margin-left: 470px;
+}
+#form input {
+  color: green;
+  background-color: pink;
+}
+#message-text {
+  padding: 5px;
+  border-radius: 10px;
+}
+#form textarea {
+  color: crimson;
+  background-color: chartreuse;
+}
+#error {
+  display: none;
+}
 
+/* Media Queries */
+@media (max-width: 1000px) {
   header {
     color: red;
     font-size: large;
@@ -106,6 +118,12 @@ a:active {
     color: dimgray;
     background-color: mediumvioletred;
   }
+  .contact-form {
+    display: none;
+  }
+  #error {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -117,8 +135,8 @@ a:active {
       'home home home'
       'home about-me-container social';
   }
+
   #home {
-    text-align: center;
     grid-area: home;
   }
 
@@ -146,5 +164,8 @@ a:active {
   a:visited {
     color: darkgreen;
     background-color: gold;
+  }
+  .contact-form {
+    display: none;
   }
 }

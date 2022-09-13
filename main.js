@@ -59,3 +59,5 @@ button.addEventListener('click', () => {
 
 //! call function so the conversion results of default-ly chosen value is already displaying once screen loads
 getExchangeRate();
+
+
