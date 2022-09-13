@@ -135,35 +135,99 @@ a:active {
   justify-content: center;
 }
 /* Media queries */
-/* @media (min-width: 1280px) {
-  main {
-    width: 70%;
+@media (max-width: 1000px) {
+  h1,
+  h2,
+  h3 {
+    color: honeydew;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
-  footer {
-    width: 90%; */
-/* float: left; */
-/* } */
-/* } */
-/* @media (max-width: 1279px) {
-  main {
-    width: 90%;
-  } */
-/* } */
+  h3 {
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  #enter-amount {
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: beige;
+  }
 
-@media (max-width: 767px) {
-  #from input {
-    width: 150px;
+  #first-country {
+    color: black;
+    background-color: aquamarine;
   }
-  /* header {  */
-  /* grid-template-columns: 2fr; */
-  /* } */
-  /* main { */
-  /* width: 90%; */
-  /* grid-template-columns: 1fr; */
-  /* gap: 50px; */
-  /* } */
-  /* footer {
-    padding: 25px;
-    text-align: center; */
-  /* } */
+  #first-amount {
+    background-color: blueviolet;
+    color: red;
+  }
+  #second-amount {
+    background-color: blueviolet;
+    color: red;
+  }
+  #second-country {
+    color: black;
+    background-color: aquamarine;
+  }
+  a:link {
+    color: blue;
+    background-color: black;
+  }
+  a:hover {
+    color: azure;
+    background-color: blue;
+  }
+  a:visited {
+    color: black;
+    background-color: red;
+  }
+}
+@media (max-width: 800px) {
+  h1,
+  h2 {
+    color: violet;
+    font-weight: bolder;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  h3 {
+    text-align: center;
+    color: #fe6700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #enter-amount {
+    color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: cyan;
+  }
+
+  #first-country {
+    color: #00f900;
+    background-color: black;
+  }
+  #first-amount {
+    background-color: black;
+    color: lawngreen;
+  }
+  #second-amount {
+    background-color: black;
+    color: lawngreen;
+  }
+  #second-country {
+    color: #00f900;
+    background-color: black;
+  }
+  a:link {
+    color: blue;
+  }
+  a:hover {
+    color: navy;
+    background-color: dimgray;
+  }
+  a:visited {
+    color: floralwhite;
+    background-color: black;
+  }
 }

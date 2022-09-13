@@ -77,3 +77,74 @@ a:active {
   color: teal;
   background-color: azure;
 }
+
+@media (max-width: 1000px) {
+  .home {
+    text-align: center;
+    display: grid;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  header {
+    color: red;
+    font-size: large;
+    background-color: lightsteelblue;
+  }
+
+  footer {
+    text-align: center;
+    background-color: lightskyblue;
+  }
+
+  a:hover {
+    color: blue;
+    background-color: greenyellow;
+  }
+
+  a:visited {
+    color: dimgray;
+    background-color: mediumvioletred;
+  }
+}
+
+@media (max-width: 800px) {
+  #page2 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+      'home home home'
+      'home about-me-container social';
+  }
+  #home {
+    text-align: center;
+    grid-area: home;
+  }
+
+  .about-me-container {
+    grid-area: about-me-container;
+    background-color: black;
+    color: aliceblue;
+  }
+
+  header {
+    color: blue;
+    font-size: large;
+    background-color: lightsteelblue;
+  }
+
+  #social {
+    grid-area: social;
+    color: black;
+  }
+  a:hover {
+    color: red;
+    background-color: black;
+  }
+
+  a:visited {
+    color: darkgreen;
+    background-color: gold;
+  }
+}

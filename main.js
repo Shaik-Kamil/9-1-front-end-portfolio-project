@@ -45,6 +45,8 @@ function getExchangeRate() {
 firstCountryId.addEventListener('change', getExchangeRate);
 secondCountryId.addEventListener('change', getExchangeRate);
 firstAmountId.addEventListener('input', getExchangeRate);
+
+// This function eventListener is not working or not working as intended.
 secondAmountId.addEventListener('input', getExchangeRate);
 
 //! Add event listener for when the swap button is clicked so it can reverse the values
