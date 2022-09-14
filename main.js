@@ -1,4 +1,5 @@
-let url = `https://v6.exchangerate-api.com/v6/0c6e375cb6d28cd0665322a9/latest/`;
+// let url = `https://v6.exchangerate-api.com/v6/0c6e375cb6d28cd0665322a9/latest/`;
+let url = `https://v6.exchangerate-api.com/v6/bcb9adb325bffa82847da5a8/latest/`;
 
 //! query select the first dropdown country
 const firstCountryId = document.querySelector('#first-country');
@@ -59,5 +60,3 @@ button.addEventListener('click', () => {
 
 //! call function so the conversion results of default-ly chosen value is already displaying once screen loads
 getExchangeRate();
-
-
