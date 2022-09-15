@@ -1,4 +1,4 @@
-//! API key is exhausted/ ran out but keeping here for reference sake 
+//! API key is exhausted/ ran out but keeping here for reference sake
 // let url = `https://v6.exchangerate-api.com/v6/0c6e375cb6d28cd0665322a9/latest/`;
 // let url = `https://v6.exchangerate-api.com/v6/bcb9adb325bffa82847da5a8/latest/`;
 
@@ -27,9 +27,9 @@ function getExchangeRate() {
 
   //! use the base url which would include APIkey and keep base country dynamic so it can be easily re-assigned according to what the user selects
   //? This API key is the original one and is out of requests so it will not work.
-  // fetch(`${url}` + `${firstCurrency}`)
-  //! this key is new and has requests
-  fetch(`https://v6.exchangerate-api.com/v6/${key}/latest/${firstCurrency}`)
+  fetch(`${url}` + `${firstCurrency}`)
+    //! this key is new and has requests
+    // fetch(`https://v6.exchangerate-api.com/v6/${key}/latest/${firstCurrency}`)
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
