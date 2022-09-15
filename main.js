@@ -5,7 +5,7 @@
 //! fresh API key
 let url = `https://v6.exchangerate-api.com/v6/f02fd6202962851b456e2883/latest/`;
 
-//! I tried to deploy to netlify, it worked initially but now its working since I had to delete my github repo
+//! I tried to deploy to netlify, it worked initially but now it's not working since I had to delete my github repo
 //! and create a new one :(
 let key = config.SECRET_API_KEY;
 //! query select the first dropdown country
