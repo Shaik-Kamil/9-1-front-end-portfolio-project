@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Source+Sans+Pro&display=swap');
+
 body#page2 {
   background-color: #39cccc;
 }
@@ -11,7 +13,7 @@ header {
   margin: 80px 40px 80px 40px;
   display: grid;
   /* grid-template-rows: 1fr 1fr; */
-  font-family: 'Raleway,Tahoma,Times New Roman', Verdana;
+  font-family: 'Source Sans Pro', 'sans-serif';
   font-weight: 500px;
   text-align: center;
   border-radius: 10px;
@@ -28,6 +30,12 @@ img {
 
 .image {
   text-align: center;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.image:hover {
+  transform: rotate(180deg);
+  transition-property: opacity, left;
+  transition-duration: 3s, 5s, 2s, 1s;
 }
 
 #social {
@@ -42,6 +50,7 @@ a {
   border-radius: 100px;
   padding: 10px;
 }
+
 a:link {
   color: darkorchid;
 }

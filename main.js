@@ -1,6 +1,7 @@
 // let url = `https://v6.exchangerate-api.com/v6/0c6e375cb6d28cd0665322a9/latest/`;
-let url = `https://v6.exchangerate-api.com/v6/bcb9adb325bffa82847da5a8/latest/`;
+// let url = `https://v6.exchangerate-api.com/v6/bcb9adb325bffa82847da5a8/latest/`;
 
+let key = config.SECRET_API_KEY;
 //! query select the first dropdown country
 const firstCountryId = document.querySelector('#first-country');
 //! query select the second dropdown country
@@ -24,7 +25,10 @@ function getExchangeRate() {
   // console.log(secondCurrency);
 
   //! use the base url which would include APIkey and keep base country dynamic so it can be easily re-assigned according to what the user selects
-  fetch(`${url}` + `${firstCurrency}`)
+  //? This API key is the original one and is out of requests so it will not work.
+  // fetch(`${url}` + `${firstCurrency}`)
+  //! this key is new and has requests
+  fetch(`https://v6.exchangerate-api.com/v6/${key}/latest/${firstCurrency}`)
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
