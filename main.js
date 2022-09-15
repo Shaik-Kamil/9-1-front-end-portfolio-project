@@ -1,3 +1,4 @@
+//! API key is exhausted/ ran out but keeping here for reference sake 
 // let url = `https://v6.exchangerate-api.com/v6/0c6e375cb6d28cd0665322a9/latest/`;
 // let url = `https://v6.exchangerate-api.com/v6/bcb9adb325bffa82847da5a8/latest/`;
 
