@@ -16,7 +16,7 @@
 
 - clone this project to your computer.
 
-- once you've finished cloning the project, from the Command line navigate into the folder where you've cloned my project and once inside open up vsCode by typing code . 
+- once you've finished cloning the project, from the Command line navigate into the folder where you've cloned my project and once inside open up vsCode by typing code .
 
 - once you're inside vscode, go to the index.html and once you've opened that file in vscode go live.
 
@@ -34,4 +34,4 @@
 
 - you also have the ability to swap currencies and get the inverse rate.
 
--underneath
+- underneath the to input field you should be able to navigate to the about me page to learn more about me and ways to get in contact and you can also leave a name email and a message that you want to send me.
