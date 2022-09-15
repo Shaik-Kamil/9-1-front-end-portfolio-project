@@ -18,6 +18,10 @@
 
 - once you've finished cloning the project, from the Command line navigate into the folder where you've cloned my project and once inside open up vsCode by typing code .
 
+- once you're inside vscode create a config.js file with `const config = { SECRET_API_KEY: '', };` this inside. The value inside the empty string will be your API key which you can get for free by signing up at this[link](https://www.exchangerate-api.com/).
+
+and to sign up for the api key and where to go to do that. Otherwise they can’t use their app.
+
 - once you're inside vscode, go to the index.html and once you've opened that file in vscode go live.
 
 - Now you're inside the currency converter page
