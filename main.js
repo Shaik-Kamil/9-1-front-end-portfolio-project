@@ -2,6 +2,11 @@
 // let url = `https://v6.exchangerate-api.com/v6/0c6e375cb6d28cd0665322a9/latest/`;
 // let url = `https://v6.exchangerate-api.com/v6/bcb9adb325bffa82847da5a8/latest/`;
 
+//! fresh API key
+let url = `https://v6.exchangerate-api.com/v6/f02fd6202962851b456e2883/latest/`;
+
+//! I tried to deploy to netlify, it worked initially but now its working since I had to delete my github repo
+//! and create a new one :(
 let key = config.SECRET_API_KEY;
 //! query select the first dropdown country
 const firstCountryId = document.querySelector('#first-country');

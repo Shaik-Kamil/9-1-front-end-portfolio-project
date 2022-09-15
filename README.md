@@ -14,7 +14,13 @@
 
 ## How to use access and use the app
 
-- go to / copy & paste this in url bar https://serene-parfait-026a28.netlify.app/index.html
+- clone this project to your computer.
+
+- once you've finished cloning the project, from the Command line navigate into the folder where you've cloned my project and once inside open up vsCode by typing code . 
+
+- once you're inside vscode, go to the index.html and once you've opened that file in vscode go live.
+
+- Now you're inside the currency converter page
 
 - choose from the dropdown options the currency you're converting
 
@@ -27,3 +33,5 @@
 - On top of the second input field you you will see the current exchange rate for your "From" currency = "to" currency.
 
 - you also have the ability to swap currencies and get the inverse rate.
+
+-underneath
