@@ -10,9 +10,8 @@ form.addEventListener('submit', (event) => {
 
   //!alternative way to access value
   // const yourName = document.querySelector('#john-doe');
-  // console.log(yourName.value);
+
   // const email = document.querySelector('#snail-mail');
-  // console.log(email.value);
 
   const error = document.querySelector('#error');
 

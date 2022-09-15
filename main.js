@@ -25,10 +25,9 @@ const button = document.querySelector('#swap');
 function getExchangeRate() {
   //! store in a const the chosen value of country 1 dropdown item
   const firstCurrency = firstCountryId.value;
-  // console.log(firstCurrency);
+
   //! store in a const the chosen value of country 2 dropdown item
   const secondCurrency = secondCountryId.value;
-  // console.log(secondCurrency);
 
   //! use the base url which would include APIkey and keep base country dynamic so it can be easily re-assigned according to what the user selects
   //? This API key is the original one and is out of requests so it will not work.
@@ -37,10 +36,9 @@ function getExchangeRate() {
     // fetch(`https://v6.exchangerate-api.com/v6/${key}/latest/${firstCurrency}`)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       //! when the user selects the first dropdown and second drop down options automatically looks up the value of the exchange rate between country1-country2 once amount is input
       const result = data.conversion_rates[secondCurrency];
-      // console.log(result);
+
       //! re-assign the result divs to display the current exchange rate of country 1 - country2
       resultId.textContent = `1 ${firstCurrency} = ${result} ${secondCurrency}`;
 
