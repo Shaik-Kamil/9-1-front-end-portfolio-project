@@ -14,6 +14,8 @@
 
 ## How to use access and use the app
 
+- deployed to github [pages](https://shaik-kamil.github.io/9-1-front-end-portfolio-project/) which is not working with API keys but putting it here for visual reference. Please follow the step below.
+
 - clone this project to your computer.
 
 - once you've finished cloning the project, from the Command line navigate into the folder where you've cloned my project and once inside open up vsCode by typing code .
